@@ -1,0 +1,3 @@
+FROM registry.access.redhat.com/ubi8-minimal:8.7-1107
+
+RUN curl --progress-bar -L -k --header "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJncm91cHMiOm51bGwsInJvbGVQZXJtcyI6W1syNTUsMjU1LDI1NSwyNTUsMjU1LDEyNywxXSxbMjU1LDI1NSwyNTUsMjU1LDI1NSwxMjcsMV1dLCJwZXJtaXNzaW9ucyI6W3sicHJvamVjdCI6IkNlbnRyYWwgQ29uc29sZSJ9XSwic2Vzc2lvblRpbWVvdXRTZWMiOjM2MDAsImV4cCI6MTY4MjMxODg0OCwiaXNzIjoidHdpc3Rsb2NrIn0.wf2l03dookvNdi7MRkgI0JSNFTSm8AgKCVIephvYteY" https://twistlock-console.apps.ocp.ys.com/api/v1/util/twistcli > twistcli; chmod a+x twistcli;
